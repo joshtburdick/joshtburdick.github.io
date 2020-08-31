@@ -11,10 +11,9 @@ track PROseq
     priority 1
 
 ###############################
-
         track pauseA
         parent PROseq
-        bigDataUrl bigWig/promoter_sites_ctrlC.bw
+	bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/promoter_sites_ctrlC.bw
         shortLabel Indv. A
         longLabel Pause Site A
         type bigWig
@@ -26,7 +25,7 @@ track PROseq
 
         track pauseB
         parent PROseq
-        bigDataUrl bigWig/promoter_sites_ctrlD.bw
+	bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/promoter_sites_ctrlD.bw
         shortLabel Indv. B
         longLabel Pause Site B
         type bigWig
@@ -38,7 +37,7 @@ track PROseq
 
         track pauseC
         parent PROseq
-        bigDataUrl bigWig/promoter_sites_ctrlG.bw
+	bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/promoter_sites_ctrlG.bw
         shortLabel Indv. C
         longLabel Pause Site C
         type bigWig
@@ -50,7 +49,7 @@ track PROseq
 
         track pauseD
         parent PROseq
-        bigDataUrl bigWig/promoter_sites_ctrlH.bw
+	bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/promoter_sites_ctrlH.bw
         shortLabel Indv. D
         longLabel Pause Site D
         type bigWig
@@ -62,8 +61,8 @@ track PROseq
 
         track pauseE
         parent PROseq
-        bigDataUrl bigWig/promoter_sites_ctrlL.bw
-        shortLabel Indv. E
+	bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/promoter_sites_ctrlL.bw
+	shortLabel Indv. E
         longLabel Pause Site E
         type bigWig
         visibility dense
@@ -90,7 +89,7 @@ priority 10
 html examplePage
 
                 track CtrlAPlus
-                bigDataUrl bigWig/C.plus.bw
+		bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/C.plus.bw
                 shortLabel Ctrl A +
                 longLabel A
                 parent PROseq_bw
@@ -102,7 +101,7 @@ html examplePage
 		priority 11
 
                 track CtrlBPlus
-                bigDataUrl bigWig/D.plus.bw
+		bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/D.plus.bw
                 shortLabel Ctrl B +
                 longLabel B
                 parent PROseq_bw
@@ -114,7 +113,7 @@ html examplePage
 		priority 12
 
                 track CtrlCPlus
-                bigDataUrl bigWig/G.plus.bw
+		bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/G.plus.bw
                 shortLabel Ctrl C +
                 longLabel C
                 parent PROseq_bw
@@ -126,7 +125,7 @@ html examplePage
 		priority 13
 
                 track CtrlDPlus
-                bigDataUrl bigWig/H.plus.bw
+		bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/H.plus.bw
                 shortLabel Ctrl D +
                 longLabel D
                 parent PROseq_bw
@@ -138,7 +137,7 @@ html examplePage
 		priority 14
 
                 track CtrlEPlus
-                bigDataUrl bigWig/L.plus.bw
+		bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/L.plus.bw
                 shortLabel Ctrl E +
                 longLabel E
                 parent PROseq_bw
@@ -150,7 +149,7 @@ html examplePage
 		priority 15
 
                 track CtrlAMinus
-                bigDataUrl bigWig/C.minus.bw
+		bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/C.minus.bw
                 shortLabel Ctrl A -
                 longLabel A
                 parent PROseq_bw
@@ -163,7 +162,7 @@ html examplePage
 		negateValues on
 
                 track CtrlBMinus
-                bigDataUrl bigWig/D.minus.bw
+		bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/D.minus.bw
                 shortLabel Ctrl B -
                 longLabel B
                 parent PROseq_bw
@@ -176,7 +175,7 @@ html examplePage
 		negateValues on
 
                 track CtrlCMinus
-                bigDataUrl bigWig/G.minus.bw
+		bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/G.minus.bw
                 shortLabel Ctrl C -
                 longLabel C
                 parent PROseq_bw
@@ -189,7 +188,7 @@ html examplePage
 		negateValues on
 
                 track CtrlDMinus
-                bigDataUrl bigWig/H.minus.bw
+		bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/H.minus.bw
                 shortLabel Ctrl D -
                 longLabel D
                 parent PROseq_bw
@@ -202,7 +201,7 @@ html examplePage
 		negateValues on
 
                 track CtrlEMinus
-                bigDataUrl bigWig/L.minus.bw
+		bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/L.minus.bw
                 shortLabel Ctrl E -
                 longLabel E
                 parent PROseq_bw
@@ -232,7 +231,7 @@ priority 40
 # html examplePage
 
                 track NELFA_ChIP
-                bigDataUrl bigWig/NELFA.bw
+		bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/NELFA.bw
                 shortLabel NELFA ChIP-seq
                 longLabel NELFA ChIP-seq
                 parent ChIP
@@ -244,7 +243,7 @@ priority 40
 		priority 41
 
                 track SPT5_ChIP
-                bigDataUrl bigWig/SPT5.bw
+		bigDataUrl http://viviancheunglab.org/USCS_track/pauseHub_ChIP_bigWig/hg18/bigWig/SPT5.bw
                 shortLabel SPT5 ChIP-seq
                 longLabel SPT5 ChIP-seq
                 parent ChIP
