@@ -1,0 +1,6 @@
+hub pausing
+shortLabel Pausing
+longLabel Pausing-related tracks
+genomesFile genomes.txt
+email vgcheung@med.umich.edu
+descriptionUrl pausing.html 

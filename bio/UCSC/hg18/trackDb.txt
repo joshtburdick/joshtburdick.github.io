@@ -1,0 +1,257 @@
+
+track PROseq
+    superTrack on show
+    shortLabel Fibroblast PROseq
+    longLabel Fibroblast PROseq
+#    type bigWig 0 1.0
+    viewLimits 0.0:0.2
+    autoScale on
+    allButtonPair on
+    visibility full
+    priority 1
+
+###############################
+
+        track pauseA
+        parent PROseq
+        bigDataUrl bigWig/promoter_sites_ctrlC.bw
+        shortLabel Indv. A
+        longLabel Pause Site A
+        type bigWig
+        visibility dense
+        color 0,0,200
+	priority 2
+	maxHeightPixels 20
+	alwaysZero on
+
+        track pauseB
+        parent PROseq
+        bigDataUrl bigWig/promoter_sites_ctrlD.bw
+        shortLabel Indv. B
+        longLabel Pause Site B
+        type bigWig
+        visibility dense
+        color 0,0,200
+	priority 3
+	maxHeightPixels 20
+	alwaysZero on
+
+        track pauseC
+        parent PROseq
+        bigDataUrl bigWig/promoter_sites_ctrlG.bw
+        shortLabel Indv. C
+        longLabel Pause Site C
+        type bigWig
+        visibility dense
+        color 0,0,200
+	priority 4
+	maxHeightPixels 20
+	alwaysZero on
+
+        track pauseD
+        parent PROseq
+        bigDataUrl bigWig/promoter_sites_ctrlH.bw
+        shortLabel Indv. D
+        longLabel Pause Site D
+        type bigWig
+        visibility dense
+        color 0,0,200
+	priority 5
+	maxHeightPixels 20
+	alwaysZero on
+
+        track pauseE
+        parent PROseq
+        bigDataUrl bigWig/promoter_sites_ctrlL.bw
+        shortLabel Indv. E
+        longLabel Pause Site E
+        type bigWig
+        visibility dense
+        color 0,0,200
+	priority 6
+	maxHeightPixels 20
+	alwaysZero on
+
+################################################
+# PROseq bigWigs
+track PROseq_bw
+parent PROseq
+type bigWig
+container multiWig
+shortLabel PROseq
+longLabel PROseq (+ strand in blue, - strand in red)
+visibility full
+aggregate none
+showSubtrackColorOnUi on
+maxHeightPixels 60:40:8
+autoScale on
+# viewLimits 1:20
+priority 10
+html examplePage
+
+                track CtrlAPlus
+                bigDataUrl bigWig/C.plus.bw
+                shortLabel Ctrl A +
+                longLabel A
+                parent PROseq_bw
+                graphTypeDefault bar
+                type bigWig
+		windowingFunction maximum
+                color 0,0,255
+		autoscale on
+		priority 11
+
+                track CtrlBPlus
+                bigDataUrl bigWig/D.plus.bw
+                shortLabel Ctrl B +
+                longLabel B
+                parent PROseq_bw
+                graphTypeDefault bar
+                type bigWig
+		windowingFunction maximum
+                color 0,0,255
+		autoscale on
+		priority 12
+
+                track CtrlCPlus
+                bigDataUrl bigWig/G.plus.bw
+                shortLabel Ctrl C +
+                longLabel C
+                parent PROseq_bw
+                graphTypeDefault bar
+                type bigWig
+		windowingFunction maximum
+                color 0,0,255
+		autoscale on
+		priority 13
+
+                track CtrlDPlus
+                bigDataUrl bigWig/H.plus.bw
+                shortLabel Ctrl D +
+                longLabel D
+                parent PROseq_bw
+                graphTypeDefault bar
+                type bigWig
+		windowingFunction maximum
+                color 0,0,255
+		autoscale on
+		priority 14
+
+                track CtrlEPlus
+                bigDataUrl bigWig/L.plus.bw
+                shortLabel Ctrl E +
+                longLabel E
+                parent PROseq_bw
+                graphTypeDefault bar
+                type bigWig
+		windowingFunction maximum
+                color 0,0,255
+		autoscale on
+		priority 15
+
+                track CtrlAMinus
+                bigDataUrl bigWig/C.minus.bw
+                shortLabel Ctrl A -
+                longLabel A
+                parent PROseq_bw
+                graphTypeDefault bar
+                type bigWig
+		windowingFunction maximum
+                color 255,0,0
+		autoscale on
+		priority 21
+		negateValues on
+
+                track CtrlBMinus
+                bigDataUrl bigWig/D.minus.bw
+                shortLabel Ctrl B -
+                longLabel B
+                parent PROseq_bw
+                graphTypeDefault bar
+                type bigWig
+		windowingFunction maximum
+                color 255,0,0
+		autoscale on
+		priority 22
+		negateValues on
+
+                track CtrlCMinus
+                bigDataUrl bigWig/G.minus.bw
+                shortLabel Ctrl C -
+                longLabel C
+                parent PROseq_bw
+                graphTypeDefault bar
+                type bigWig
+		windowingFunction maximum
+                color 255,0,0
+		autoscale on
+		priority 23
+		negateValues on
+
+                track CtrlDMinus
+                bigDataUrl bigWig/H.minus.bw
+                shortLabel Ctrl D -
+                longLabel D
+                parent PROseq_bw
+                graphTypeDefault bar
+                type bigWig
+		windowingFunction maximum
+                color 255,0,0
+		autoscale on
+		priority 24
+		negateValues on
+
+                track CtrlEMinus
+                bigDataUrl bigWig/L.minus.bw
+                shortLabel Ctrl E -
+                longLabel E
+                parent PROseq_bw
+                graphTypeDefault bar
+                type bigWig
+		windowingFunction maximum
+                color 255,0,0
+		autoscale on
+		priority 25
+		negateValues on
+
+#################
+# ChIP bigWigs
+track ChIP
+parent PROseq
+type bigWig
+container multiWig
+shortLabel Fibroblast ChIP-seq
+longLabel Fibroblast ChIP-seq
+visibility full
+aggregate none
+showSubtrackColorOnUi on
+maxHeightPixels 60:40:8
+autoScale on
+# viewLimits 1:20
+priority 40
+# html examplePage
+
+                track NELFA_ChIP
+                bigDataUrl bigWig/NELFA.bw
+                shortLabel NELFA ChIP-seq
+                longLabel NELFA ChIP-seq
+                parent ChIP
+                graphTypeDefault bar
+                type bigWig
+		windowingFunction maximum
+                color 43,227,43
+		autoscale on
+		priority 41
+
+                track SPT5_ChIP
+                bigDataUrl bigWig/SPT5.bw
+                shortLabel SPT5 ChIP-seq
+                longLabel SPT5 ChIP-seq
+                parent ChIP
+                graphTypeDefault bar
+                type bigWig
+		windowingFunction maximum
+                color 177,12,232
+		autoscale on
+		priority 42
+
